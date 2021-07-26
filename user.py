@@ -3,6 +3,7 @@ class User:
         self.nickname = nickname
         self.password = password
         self.messages = []
+        self.controller = controller
 
     def send_message(self, nickname_to, text):
         pass
@@ -12,3 +13,5 @@ class User:
             print(f'*    {message.from_user} - {message.timestamp}')
             print(message.text)
             print()
+
+
